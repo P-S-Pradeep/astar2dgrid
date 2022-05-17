@@ -198,8 +198,9 @@ def astar_search(problem, h=None):
     return best_first_search(problem, f=lambda n: g(n) + h(n))
 obstacles={(0,8),(0,9),(1,1),(1,2),(1,4),(1,9),(2,1),(2,4),(2,5),(2,6),(2,7),(3,1),(3,2),(3,6),(3,7)}
 
-grid1 = GridProblem(initial=(0,3), goal =(4,9) ,obstacles=obstacles)
+grid1 = GridProblem(initial=(0,0), goal =(4,6) ,obstacles=obstacles)
 s1 = astar_search(grid1)
+
 
 
 path_states(s1)
